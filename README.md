@@ -48,7 +48,7 @@ repository_name, date, clones, unique_visitors
 ```
 
 ```
-$ python github-traffic-stats.py 'hocinebendou' 'baobab.lims' 'clones' 'save_csv'
+$ python github-traffic-stats.py 'hocinebendou' 'baobab.lims' 'views' 'save_csv'
 Password:* (passwords are hidden)
 github-traffic-stats
 Date        Views   Unique visitors
