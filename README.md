@@ -21,22 +21,61 @@ There are a number of GitHub [libraries](https://developer.github.com/libraries/
 
 Run on the command line with either `python` or `python3`.
 
+### Get Stats for Clones
+
 ```
 $ python github-traffic-stats.py 'hocinebendou' 'baobab.lims' 'clones' 'save_csv'
 Password:* (passwords are hidden)
-baobab.lims
-Date		     Clones	  Unique visitors
-Totals		   18	      15
-2017-07-11	 2	      2
-2017-07-14	 1	      1
-2017-07-15	 2	      1
-2017-07-16	 1	      1
-2017-07-17	 1	      1
-2017-07-18	 4	      3
-2017-07-19	 2	      2
-2017-07-21	 4	      4
-2017-07-24	 1	      1
+github-traffic-stats
+Date        Clones   Unique visitors
+Totals      18      15
+2017-07-11  2	      2
+2017-07-14  1       1
+2017-07-15  2       1
+2017-07-16  1       1
+2017-07-17  1       1
+2017-07-18  4       3
+2017-07-19  2       2
+2017-07-21  4       4
+2017-07-24  1       1
 ...
+
+```
+
+Traffic data stored in CSV files with columns:
+```
+repository_name, date, clones, unique_visitors
+```
+
+```
+$ python github-traffic-stats.py 'hocinebendou' 'baobab.lims' 'clones' 'save_csv'
+Password:* (passwords are hidden)
+github-traffic-stats
+Date        Views   Unique visitors
+Totals      452      21
+2017-07-11  26       2
+2017-07-12  27       2
+2017-07-13  8        1
+2017-07-14  22       2
+2017-07-15  28       2
+2017-07-16  6        2
+2017-07-17  8        1
+2017-07-18  20       2
+2017-07-19  63       9
+2017-07-20  8        1
+2017-07-21  30       5
+2017-07-22  13       1
+2017-07-23  3        1
+2017-07-24  73       5
+2017-07-25  117      5
+...
+
+```
+
+Traffic data stored in CSV files with columns:
+```
+repository_name, date, views, unique_visitors
+```
 
 Separate CSVs are created for each run of the script.
 To merge and only preserve the unique data points, run:
