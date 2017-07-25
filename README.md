@@ -1,4 +1,4 @@
-# github-traffic-stats
+# Fork of nchah/github-traffic-stats
 
 Get statistics on web traffic to your GitHub repositories.
 
@@ -22,35 +22,21 @@ There are a number of GitHub [libraries](https://developer.github.com/libraries/
 Run on the command line with either `python` or `python3`.
 
 ```
-$ python github-traffic-stats.py 'nchah' 'github-traffic-stats' 'save_csv'
+$ python github-traffic-stats.py 'hocinebendou' 'baobab.lims' 'clones' 'save_csv'
 Password:* (passwords are hidden)
-github-traffic-stats
-Date        Views   Unique visitors
-Totals      146     64
-2016-09-01  1       1
-2016-09-05  1       1
-2016-09-06  8       1
-2016-09-07  5       1
-2016-09-08  85      44
-2016-09-09  22      9
-2016-09-10  6       4
-2016-09-11  6       4
-2016-09-12  11      6
-2016-09-13  1       1
+baobab.lims
+Date		     Clones	  Unique visitors
+Totals		   18	      15
+2017-07-11	 2	      2
+2017-07-14	 1	      1
+2017-07-15	 2	      1
+2017-07-16	 1	      1
+2017-07-17	 1	      1
+2017-07-18	 4	      3
+2017-07-19	 2	      2
+2017-07-21	 4	      4
+2017-07-24	 1	      1
 ...
-*2016-08-08 traffic spikes after post on /r/coolgithubprojects
-
-# Or to get stats on all of your repositories
-$ python github-traffic-stats.py 'nchah' 'ALL' 'save_csv'
-Password:* (passwords are hidden)
-...
-
-```
-
-Traffic data stored in CSV files with columns:
-```
-repository_name, date, views, unique_visitors
-```
 
 Separate CSVs are created for each run of the script.
 To merge and only preserve the unique data points, run:
@@ -64,6 +50,5 @@ $ bash bash/merge-csv.sh [folder_with_CSVs]
 
 A list of the references used for this project.
 
-- [GitHub API](https://developer.github.com/v3/)
-- [Preview the Repository Traffic API (August 15, 2016)](https://developer.github.com/changes/2016-08-15-traffic-api-preview/)
+- [Preview the Original Repository](https://github.com/nchah/github-traffic-stats.git)
 
