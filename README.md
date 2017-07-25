@@ -28,16 +28,16 @@ $ python github-traffic-stats.py 'hocinebendou' 'baobab.lims' 'clones' 'save_csv
 Password:* (passwords are hidden)
 github-traffic-stats
 Date        Clones   Unique visitors
-Totals      18      15
-2017-07-11  2	      2
-2017-07-14  1       1
-2017-07-15  2       1
-2017-07-16  1       1
-2017-07-17  1       1
-2017-07-18  4       3
-2017-07-19  2       2
-2017-07-21  4       4
-2017-07-24  1       1
+Totals      18       15
+2017-07-11  2        2
+2017-07-14  1        1
+2017-07-15  2        1
+2017-07-16  1        1
+2017-07-17  1        1
+2017-07-18  4        3
+2017-07-19  2        2
+2017-07-21  4        4
+2017-07-24  1        1
 ...
 
 ```
