@@ -11,8 +11,8 @@ import requests
 current_timestamp = str(datetime.datetime.now().strftime('%Y-%m-%d-%Hh-%Mm'))  # was .strftime('%Y-%m-%d'))
 path = os.path.dirname(os.path.abspath(__file__))
 top_dir = os.path.split(path)[0]
-csv_views = top_dir + '/git-traffics/data/' + current_timestamp + '-traffic-stats-views.csv'
-csv_clones = top_dir + '/git-traffics/data/' + current_timestamp + '-traffic-stats-clones.csv'
+csv_views = top_dir + '/data/' + current_timestamp + '-traffic-stats-views.csv'
+csv_clones = top_dir + '/data/' + current_timestamp + '-traffic-stats-clones.csv'
 
 
 def send_request(resource, auth, repo=None, op='clones', headers=None):
